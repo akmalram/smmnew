@@ -290,6 +290,10 @@ ul li::before {
   }
 }
 
+.page-mobile .img {
+  text-align: center;
+}
+
 .page-mobile .block-1,
 .page-mobile .block-2 {
   min-height: 96vh;
