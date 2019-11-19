@@ -16,11 +16,11 @@
     font-weight: bold;
 
     @include md-block {
-        font-size: 26px;
+        font-size: 34px;
         margin-bottom: 20px;
     }
 
-    @include md-block {
+    @include sm-block {
         font-size: 26px;
         margin-bottom: 10px;
     }
@@ -33,7 +33,7 @@
     margin-bottom: 20px;
 
     @include md-block {
-        font-size: 15px;
+        font-size: 18px;
         line-height: 1.4;
         letter-spacing: .6px;
         margin-bottom: 13px;
@@ -41,10 +41,8 @@
 }
 
 .img {
-    text-align: center;
-
     img {
-        max-width: 300px;
+        max-width: 350px;
     }
 }
 
@@ -105,6 +103,7 @@ ul {
 
     .container {
         height: 100%;
+        position: relative;
 
         .row {
             height: 100%;
@@ -124,6 +123,13 @@ ul {
         height: 100vh;
     }
 
+    .logo {
+        width: 125px;
+        position: absolute;
+        top: 15px;
+        left: 38px;
+    }
+
     .img img {
         transform: translateY(-50px);
         opacity: 0;
@@ -140,7 +146,7 @@ ul {
     .swiper-button-next,
     .swiper-button-prev {
         position: fixed;
-        left: 10px;
+        left: 3%;
         width: 44px;
         height: 44px;
         z-index: 10;
@@ -161,7 +167,7 @@ ul {
     }
 
     .swiper-button-prev {
-        bottom: 15%;
+        bottom: calc(5% + 44px + 10px);
     }
 
     .swiper-button-next {
@@ -177,7 +183,7 @@ ul {
         }
 
         .col.small {
-            @include size(8);
+            @include size(12);
             display: flex;
             flex-direction: column;
 
@@ -187,7 +193,7 @@ ul {
         }
 
         .col.big {
-            @include size(16);
+            @include size(12);
 
         }
     }
