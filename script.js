@@ -2,6 +2,10 @@ window.addEventListener('load', () => {
     let swiper = new Swiper('.swiper-container.wrapper', {
         speed: 700,
         direction: 'vertical',
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
         mousewheel: {
             sensitivity: 3,
         },

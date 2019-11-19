@@ -117,6 +117,35 @@ ul li::before {
   height: 100vh;
 }
 
+.page-desktop .swiper-button-next,
+.page-desktop .swiper-button-prev {
+  position: fixed;
+  left: 10px;
+  width: 44px;
+  height: 44px;
+  z-index: 10;
+  margin-top: 0;
+  top: auto;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid #554848;
+  border-radius: 9px;
+  color: #554848;
+  line-height: 44px;
+  font-size: 30px;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.page-desktop .swiper-button-prev {
+  bottom: 15%;
+}
+
+.page-desktop .swiper-button-next {
+  bottom: 5%;
+}
+
 .page-desktop .row .col {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

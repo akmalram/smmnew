@@ -101,6 +101,38 @@ ul {
         height: 100vh;
     }
 
+    .swiper-button-next,
+    .swiper-button-prev {
+        position: fixed;
+        left: 10px;
+        width: 44px;
+        height: 44px;
+        z-index: 10;
+        margin-top: 0;
+        top: auto;
+
+        cursor: pointer;
+        background: transparent;
+        border: 2px solid rgb(85, 72, 72);
+        border-radius: 9px;
+
+        color: rgb(85, 72, 72);
+        line-height: 44px;
+        font-size: 30px;
+        text-align: center;
+
+        transition: all .5s ease;
+    }
+
+    .swiper-button-prev {
+        bottom: 15%;
+    }
+
+    .swiper-button-next {
+        bottom: 5%;
+    }
+
+
     .row {
         .col {
             @include col();
