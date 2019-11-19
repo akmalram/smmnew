@@ -13,6 +13,7 @@
 .page-title {
     font-size: 40px;
     margin-bottom: 30px;
+    font-weight: bold;
 
     @include md-block {
         font-size: 26px;
@@ -43,7 +44,7 @@
     text-align: center;
 
     img {
-        max-width: 80%;
+        max-width: 300px;
     }
 }
 
@@ -61,6 +62,12 @@
         border-radius: 8px;
         width: 45px;
         height: 45px;
+        transition: all .5s ease;
+
+        &:hover {
+            background: #0dace8;
+            color: #fff;
+        }
     }
 
     @include md-block {
@@ -94,6 +101,22 @@ ul {
 .page-desktop {
     @include sm-block {
         display: none;
+    }
+
+    .container {
+        height: 100%;
+
+        .row {
+            height: 100%;
+            align-items: center;
+        }
+        .socials {
+            margin-top: 30px;
+        }
+    }
+
+    .block-2 {
+        background-color: #f9f9f9;
     }
 
     .content {

@@ -13,6 +13,7 @@
 .page-title {
   font-size: 40px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 1024px) {
@@ -50,7 +51,7 @@
 }
 
 .img img {
-  max-width: 80%;
+  max-width: 300px;
 }
 
 .socials {
@@ -74,6 +75,13 @@
   border-radius: 8px;
   width: 45px;
   height: 45px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.socials a:hover {
+  background: #0dace8;
+  color: #fff;
 }
 
 @media screen and (max-width: 1024px) {
@@ -110,6 +118,25 @@ ul li::before {
   .page-desktop {
     display: none;
   }
+}
+
+.page-desktop .container {
+  height: 100%;
+}
+
+.page-desktop .container .row {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.page-desktop .container .socials {
+  margin-top: 30px;
+}
+
+.page-desktop .block-2 {
+  background-color: #f9f9f9;
 }
 
 .page-desktop .content {
