@@ -144,6 +144,20 @@ ul li::before {
   height: 100vh;
 }
 
+.page-desktop .img img {
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  opacity: 0;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.page-desktop .active .img img {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .page-desktop .swiper-button-next,
 .page-desktop .swiper-button-prev {
   position: fixed;

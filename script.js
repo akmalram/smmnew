@@ -18,6 +18,22 @@ window.addEventListener('load', () => {
             onlyInViewport: true
         }
     });
+
+    swiper.on('transitionEnd', () => {
+        const slides = document.querySelectorAll('.swiper-slide');
+        const activeSlide = document.querySelector('.swiper-slide-active');
+
+        slides.forEach(one => one.classList.remove('active'))
+        activeSlide.classList.add('active');
+    });
+
+    let indicator = new WheelIndicator({
+        elem: document.querySelector('.swiper-container.wrapper'),
+        callback: function (e) {
+            if (e.direction == 'up') swiper.slidePrev();
+            else swiper.slideNext();
+        }
+    });
 });
 
 const fontAwesomeFreeObserver = new FontFaceObserver('Font Awesome 5 Free');

@@ -124,6 +124,19 @@ ul {
         height: 100vh;
     }
 
+    .img img {
+        transform: translateY(-50px);
+        opacity: 0;
+        transition: all .5s ease;
+    }
+
+    .active {
+        .img img {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
     .swiper-button-next,
     .swiper-button-prev {
         position: fixed;
@@ -154,7 +167,6 @@ ul {
     .swiper-button-next {
         bottom: 5%;
     }
-
 
     .row {
         .col {
